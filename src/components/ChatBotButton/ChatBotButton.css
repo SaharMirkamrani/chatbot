@@ -1,19 +1,37 @@
 /* ChatBot Toggle Button */
-
 .rcb-toggle-button {
-	display: flex;
-	flex-direction: row;
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	z-index: 9999;
-	width: 75px;
-	height: 75px;
-	border-radius: 50%;
-	border: none;
-	cursor: pointer;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-	background-size: cover;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 9999;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+}
+
+/* Position-specific classes */
+.rcb-bottom-left {
+    bottom: 20px;
+    left: 20px;
+}
+
+.rcb-bottom-right {
+    bottom: 20px;
+    right: 20px;
+}
+
+.rcb-top-left {
+    top: 20px;
+    left: 20px;
+}
+
+.rcb-top-right {
+    top: 20px;
+    right: 20px;
 }
 
 .rcb-toggle-button.rcb-button-hide {

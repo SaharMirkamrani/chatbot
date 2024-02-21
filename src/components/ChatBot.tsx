@@ -16,13 +16,18 @@ import { Message } from "../types/Message";
  * @param flow conversation flow for the bot
  * @param options options to setup the bot
  */
+
+interface ChatBotProps {
+	flow?: Flow,
+	options?: Options,
+	position?: string;
+  }
+
 const ChatBot = ({
 	flow,
-	options
-}: {
-	flow?: Flow,
-	options?: Options
-}) => {
+  	options,
+  	position = 'bottom-right'
+}: ChatBotProps) => {
 
 	// handles setting of options for the chat bot
 	const [botOptions, setBotOptions] = useState<Options>(parseBotOptions(options));
@@ -79,7 +84,7 @@ const ChatBot = ({
 	 * Renders chatbot with providers based on given options.
 	 */
 	const renderChatBot = () => {
-		let result = <ChatBotContainer flow={parsedFlow}/>;
+		let result = <ChatBotContainer flow={parsedFlow} position={position} />;
 		if (!botOptions.advance?.useCustomMessages) {
 			result = wrapMessagesProvider(result);
 		}

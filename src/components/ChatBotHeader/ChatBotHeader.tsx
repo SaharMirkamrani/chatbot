@@ -66,28 +66,6 @@ const ChatBotHeader = ({
 				{botOptions.header?.title}
 			</div>
 			<div className="rcb-chat-header">
-				{!botOptions.notification?.disabled && !botOptions.theme?.embedded &&
-					<div
-						style={headerImages.notificationIcon}
-						onMouseDown={(event: MouseEvent) => {
-							event.preventDefault();
-							handleToggleNotification();
-						}}
-						className={`rcb-notification-icon-${notificationToggledOn ? "on" : "off"}`}
-					>
-					</div>
-				}
-				{!botOptions.audio?.disabled &&
-					<div
-						style={headerImages.audioIcon}
-						onMouseDown={(event: MouseEvent) => {
-							event.preventDefault();
-							handleToggleAudio();
-						}}
-						className={`rcb-audio-icon-${audioToggledOn ? "on" : "off"}`}
-					>
-					</div>
-				}
 				{!botOptions.theme?.embedded &&
 					<div
 						style={headerImages.closeChatIcon}

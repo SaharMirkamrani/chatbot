@@ -7,14 +7,24 @@ import "./ChatBotButton.css";
  * 
  * @param unreadCount number of unread messages from the bot
  */
-const ChatBotButton = ({
-	unreadCount
-}: {
+
+interface ChatBotButtonProps {
 	unreadCount: number;
-}) => {
+	position?: string;
+  }
+
+const ChatBotButton = ({
+	unreadCount,
+	position = 'bottom-right'
+  }: ChatBotButtonProps) => {
+	// Determine the position class based on the position prop
+	const positionClass = `rcb-${position}`;
 
 	// handles options for bot
 	const { botOptions, setBotOptions } = useBotOptions();
+
+	const buttonClass = `rcb-toggle-button ${positionClass} ${botOptions.isOpen ?
+		"rcb-button-hide" : "rcb-button-show"}`;
 
 	/**
 	 * Toggles the chat window.
@@ -37,7 +47,7 @@ const ChatBotButton = ({
 			{!botOptions.theme?.embedded &&
 				<button
 					style={chatButtonStyle}
-					className={`rcb-toggle-button ${botOptions.isOpen ? "rcb-button-hide" : "rcb-button-show"}`}
+					className={buttonClass}
 					onClick={toggleChatWindow}
 				>
 					{!botOptions.notification?.disabled &&

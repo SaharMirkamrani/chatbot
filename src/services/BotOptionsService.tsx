@@ -1,6 +1,5 @@
 import { Options } from "../types/Options";
 
-import logo from "../assets/logo.png";
 import actionDisabledIcon from "../assets/action_disabled_icon.png";
 import botAvatar from "../assets/bot_avatar.png";
 import userAvatar from "../assets/user_avatar.svg";
@@ -104,19 +103,19 @@ const defaultOptions = {
 		autoSendPeriod: 1000,
 		icon: voiceIcon,
 	},
-	footer: {
-		text: (
-			<div style={{cursor: "pointer"}} 
-				onClick={() => window.open("https://react-chatbotify.tjtanjin.com")}
-			>
-				<span>Powered By </span>
-				<span style={{fontWeight: "bold"}}>
-					<img style={{width: 10, height: 10}} src={logo}></img>
-					<span> React ChatBotify</span>
-				</span>
-			</div>
-		),
-	},
+	// footer: {
+	// 	text: (
+	// 		<div style={{cursor: "pointer"}} 
+	// 			onClick={() => window.open("https://react-chatbotify.tjtanjin.com")}
+	// 		>
+	// 			<span>Powered By </span>
+	// 			<span style={{fontWeight: "bold"}}>
+	// 				<img style={{width: 10, height: 10}} src={logo}></img>
+	// 				{/* <span> React ChatBotify</span> */}
+	// 			</span>
+	// 		</div>
+	// 	),
+	// },
 	fileAttachment: {
 		disabled: false,
 		multiple: true,

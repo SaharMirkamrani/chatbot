@@ -25,7 +25,13 @@ import "./ChatBotContainer.css";
  * 
  * @param flow conversation flow for the bot
  */
-const ChatBotContainer = ({ flow }: { flow: Flow }) => {
+
+interface ChatBotContainerProps {
+	flow: Flow;
+	position?: string; // Optional prop for positioning
+  }
+
+const ChatBotContainer = ({ flow, position }: ChatBotContainerProps) =>  {
 
 	// handles setting of options for the chat bot
 	const { botOptions, setBotOptions } = useBotOptions();
@@ -491,8 +497,8 @@ const ChatBotContainer = ({ flow }: { flow: Flow }) => {
 			}}
 			className={getWindowStateClass()}
 		>
-			<ChatBotTooltip/>
-			<ChatBotButton unreadCount={unreadCount}/>
+			{/* <ChatBotTooltip/> */}
+			<ChatBotButton unreadCount={unreadCount} position={position} />
 			{/* styles and prevents background from scrolling on mobile when chat window is open */}
 			{botOptions.isOpen && !isDesktop && !botOptions.theme?.embedded &&
 				<>
