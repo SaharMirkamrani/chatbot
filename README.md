@@ -1,13 +1,10 @@
 <p align="center">
   <img width="200px" src="https://raw.githubusercontent.com/tjtanjin/react-chatbotify/main/src/assets/logo.png" />
-  <h1 align="center">React ChatBotify</h1>
-</p>
-
-<p align="center">
-  <a href="https://github.com/tjtanjin/react-chatbotify/actions"> <img src="https://github.com/tjtanjin/react-chatbotify/actions/workflows/build_and_test.yml/badge.svg" /> </a>
+  <h1 align="center">Chatbot</h1>
 </p>
 
 ## Table of Contents
+* [Disclaimer](#disclaimer)
 * [Introduction](#introduction)
 * [Features](#features)
 * [Technologies](#technologies)
@@ -18,23 +15,28 @@
 * [Support](#support)
 * [Attributions](#attributions)
 
+
+### Disclaimer
+
+All the rights belong to [React ChatBotify](https://github.com/tjtanjin/react-chatbotify). This repository is a modified version of the original ChatBotify. The toggle button is positioned dynamically with the props given to it. For example, if you give the position prop "bottom-left", the chat toggle button will be placed at the bottom left of the page. Same goes for "bottom-right", "top-left" and "top-right"; "bottom-right" is the default positioning of the buttom mentioned.
+
 ### Introduction
 
 <p align="center">
   <img height="400px" src="https://raw.githubusercontent.com/tjtanjin/react-chatbotify/main/src/assets/demo.png" />
 </p>
 
-React ChatBotify is an intuitive and versatile chatbot library tailored to streamline your development process while providing the flexibility to implement advanced features. It is crafted to meet a wide range of requirements, whether you're building a straightforward FAQ chatbot or an intricate conversational interface.
+Chatbot is an intuitive and versatile chatbot library tailored to streamline your development process while providing the flexibility to implement advanced features. It is crafted to meet a wide range of requirements, whether you're building a straightforward FAQ chatbot or an intricate conversational interface.
 
-React ChatBotify aims to simplify the creation of chatbots by offering a user-friendly experience while accommodating the diverse needs of developers. With its extensive capabilities, you can easily customize and expand your chatbot's functionalities. From basic interactions to sophisticated conversational flows, React ChatBotify empowers you to build chatbots that meet your specific project goals. Head over to our [community showcases](https://github.com/tjtanjin/react-chatbotify/blob/main/SHOWCASES.md) and get inspired to start your own today!
+Chatbot aims to simplify the creation of chatbots by offering a user-friendly experience while accommodating the diverse needs of developers. With its extensive capabilities, you can easily customize and expand your chatbot's functionalities. From basic interactions to sophisticated conversational flows, React ChatBotify empowers you to build chatbots that meet your specific project goals. Head over to our [community showcases](https://github.com/tjtanjin/react-chatbotify/blob/main/SHOWCASES.md) and get inspired to start your own today!
 
-`npm install react-chatbotify --save`
+`npm install sahar-chatbot --save`
 
 Note that this repository contains the code for the library. If you're looking for the repository for the React ChatBotify user guide, you may look [here](https://github.com/tjtanjin/react-chatbotify-docs).
 
 ### Features
 
-React ChatBotify offers a wide array of features designed to enhance your chatbot experience. Here are just a few of the key features:
+Chatbot offers a wide array of features designed to enhance your chatbot experience. Here are just a few of the key features:
 
 - **Dynamic Attributes:** Create interactive conversations by dynamically generating messages and defining multiple conversation paths based on user inputs.
 - **Custom Rendering of Components:** Seamlessly integrate your own custom components into the chatbot interface to boast your application's unique design and functionality.
@@ -49,7 +51,7 @@ React ChatBotify offers a wide array of features designed to enhance your chatbo
 These features, **along with many others**, empower developers to create highly interactive and personalized chatbot experiences tailored to their specific application requirements.
 
 ### Technologies
-Technologies used by React ChatBotify are as below:
+Technologies used by Chatbot are as below:
 #### Done with:
 
 <p align="center">
@@ -77,9 +79,6 @@ A full documentation (along with a **live playground**) for the library can be f
 - https://react-chatbotify.tjtanjin.com/
 
 Examples on the website are also run on a live editor so feel free to explore to your heart's content!
-
-### Team
-* [Tan Jin](https://github.com/tjtanjin)
 
 ### Contributing
 If you are looking to contribute to the project, you may find the [**Developer Guide**](https://github.com/tjtanjin/react-chatbotify/blob/main/docs/DeveloperGuide.md) useful.
