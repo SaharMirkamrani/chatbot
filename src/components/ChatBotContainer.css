@@ -9,8 +9,8 @@
 
 .rcb-chat-window {
     position: fixed;
-    left: 50%;
-    top: 50%;
+    left: 40%;
+    top: 20%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
