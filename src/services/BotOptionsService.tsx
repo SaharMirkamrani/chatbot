@@ -44,7 +44,7 @@ const defaultOptions = {
 		title: (
 			<h3 style={{cursor: "pointer", margin: 0}} onClick={
 				() => window.open("https://github.com/tjtanjin/")
-			}>Tan Jin
+			}>Sahar
 			</h3>
 		),
 		showAvatar: true,

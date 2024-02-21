@@ -5,7 +5,7 @@ const helpOptions = ["Quickstart", "API Docs", "Examples", "Github", "Discord"];
 // default provided welcome flow if user does not pass in a flow to the chat bot
 export const defaultFlow = {
 	start: {
-		message: "Hello, I am Tan Jin 👋! Welcome to React ChatBotify, I'm excited that you are using our " +
+		message: "Hello, I am Sahar 👋! Welcome to Chatbot, I'm excited that you are using our " +
 			"chatbot 😊!",
 		transition: {duration: 1000},
 		path: "show_options"
